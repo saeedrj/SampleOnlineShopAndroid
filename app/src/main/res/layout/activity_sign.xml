@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.SignActivity">
+
+    <LinearLayout
+        android:layout_weight=".9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="DIGIKALA"
+            android:textColor="#ffffff"
+            android:background="@color/color_blue_very_BIERON"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#2f2f2f"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ورود"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_gravity="right"
+                android:layout_margin="1dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:fontFamily="@font/iransans"
+                    android:textSize="14dp"
+                    android:id="@+id/Edt_Email_Sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_gravity="top"
+                    android:drawableRight="@drawable/phone_vi"
+                    android:gravity="top"
+                    android:hint="  موبایل  "
+                    android:inputType="textEmailAddress"
+                    android:onClick="SignOnClick" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:fontFamily="@font/iransans"
+                    android:id="@+id/Edt_Pass_Sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:drawableRight="@drawable/lock_pass_vr"
+                    android:hint= "  رمز عبور "
+                    android:inputType="textPassword"
+                    android:onClick="SignOnClick"
+                    android:textSize="14dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="@font/iransans"
+                        android:id="@+id/Txt_CheckBox_Sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:onClick="SignOnClick"
+                        android:text="نمایش رمز عبور" />
+
+                    <CheckBox
+                        android:id="@+id/Chb_CheckBox_Sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="SignOnClick" />
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/iransans"
+                    android:id="@+id/Txt_ForgetPass_Sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:onClick="SignOnClick"
+                    android:text="کلمه عبور را فراموش کردهم !"
+                    android:textColor="#2f2f2f" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#444040"
+                    android:text="کلمه عبور را فراموش کردم !" />
+
+
+                <TextView
+                    android:fontFamily="@font/iransans"
+                    android:id="@+id/Txt_CreateAccunt_Sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:onClick="SignOnClick"
+                    android:text="ثبت نام در دیجیکالا"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="35dp"
+                    android:background="@color/colorAccent"
+                    android:text="ثبت نام در دیجیکال" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Llt_CreateAccunt_Sign"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_weight="-.0"
+        android:background="#2C75FE"
+        android:gravity="center"
+        android:onClick="SignOnClick"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/Llt_Img_CreateAccunt_Sign"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:onClick="SignOnClick"
+            android:src="@drawable/leftaaaaa" />
+
+        <TextView
+            android:id="@+id/Llt_Txt_CreateAccunt_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:onClick="SignOnClick"
+            android:text="ورود به دیجیکالا "
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

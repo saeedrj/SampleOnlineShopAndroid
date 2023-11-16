@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login"
+    tools:context=".Activity.Start_class_teachers">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Start_class_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="?actionBarSize"
+                android:onClick="start_class_techaers"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/Start_class_teach_back_bu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:background="#00FFFFFF"
+                android:onClick="start_class_techaers"
+                android:src="@drawable/back_ve"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/Start_class_teach_start_find_bu"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/iransans"
+                android:hint="برای انتخاب واحد کلیک کنید"
+                android:onClick="start_class_techaers"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#eee"
+                android:textSize="17sp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Start_class_teach_card_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:background="@drawable/res"
+                android:layoutDirection="rtl"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/color_text_purple">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Start_class_teach_card_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/iransans"
+                        android:text="2  استاد انلاین هستند لطفا صبر کنید !"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/Start_class_teach_card_bu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_corner"
+                        android:onClick="start_class_techaers"
+                        android:text="ورود"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:onClick="start_class_techaers"
+                android:visibility="gone"
+                android:id="@+id/Start_class_details_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="27dp"
+                android:padding="5dp"
+                android:text="https://shamswebinar.ir/CO24005"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:onClick="start_class_techaers"
+                android:visibility="gone"
+                android:id="@+id/Start_class_details_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:background="#00000000"
+                android:src="@drawable/copy_vr"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="27dp"
+                android:visibility="gone"
+                android:id="@+id/Start_class_teach_card_error"
+                app:cardBackgroundColor="@color/red_activity_Dis">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/iransans"
+                android:onClick="start_class_techaers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تعداد دفعات تایین سطح شما تمام شده است"
+                android:textColor="@color/white" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarmain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_blue_very_BIERON"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:layout_height="wrap_content">
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_gravity="left"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:padding="12dp"
+                       android:layout_marginRight="7dp"
+                       android:layout_width="48dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/shop_vr"
+                       android:scaleType="centerCrop"/>
+                   <ImageView
+                       android:padding="12dp"
+                       android:layout_width="48dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/search_vr"
+                       android:scaleType="centerCrop"/>
+               </LinearLayout>
+
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="right"
+                   android:orientation="horizontal"
+                   android:gravity="left">
+
+                  <TextView
+                      android:fontFamily=""
+                      android:textColor="#FFFFFF"
+                      android:layout_marginRight="10dp"
+                      android:textStyle="bold"
+                      android:textSize="22dp"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="DIGIKALA"/>
+
+                   <ImageView
+                       android:onClick="onclick_method"
+                       android:id="@+id/hamberger_menu"
+                       android:padding="12dp"
+                       android:layout_marginRight="5dp"
+                       android:scaleType="centerCrop"
+                       android:layout_width="48dp"
+                       android:src="@drawable/menu_vr_3"
+                       android:layout_height="wrap_content" />
+
+
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dark"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_gravity="center"
+                android:onClick="onclick_method"
+                android:id="@+id/main_button_start"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="شروع کلاس جدید"
+                android:background="@drawable/round_corner_main"
+                android:padding="10dp"
+                android:fontFamily="@font/iransans"
+                />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/activity_main" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#448AFF</color>
+    <color name="colorPrimaryDark">#448AFF</color>
+    <color name="colorAccent">#00BCD4</color>
+
+    <color name="color_text_blue_wihte">#00BCD4</color>
+
+
+    <color name="color_text_purple">#FF954CFB</color>
+
+
+    <color name="color_blue_white_DAKHEL">#03A9F4</color>
+    <color name="color_blue_very_BIERON">#448AFF</color>
+    <color name="color_blue_little">#C660EDD1</color>
+
+    <color name="red_for_items_sub">#C6F05555</color>
+
+
+    <color name="red_activity_Dis">#BB4343</color>
+    <color name="red_activity_Dis_button">#D52626</color>
+
+    <color name="white">#fff</color>
+    <color name="woman">#CCC823C8</color>
+    <color name="dark">#46808080</color>
+    <color name="very_very_blue">#2E60F7</color>
+
+
+
+
+</resources>

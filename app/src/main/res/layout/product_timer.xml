@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/Lin_product_timer_LinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="2dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="right"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/res"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/Lin_product_timer_img"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/mobile1" />
+            <TextView
+                android:textColor="#3C3A3A"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:lines="2"
+                android:fontFamily="@font/iransans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/Lin_product_timer_title"
+                android:text="Huawei Honor Magic Dual SIM Mobile Phon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="5dp">
+
+
+
+                <TextView
+                    android:id="@+id/Lin_product_timer_pprice"
+                    android:fontFamily="@font/iransans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="24000"
+                    android:textSize="12dp"
+                    android:textColor="#499E61" />
+
+                <TextView
+
+                    android:fontFamily="@font/iransans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="ريال"
+                    android:textSize="12dp"
+                    android:textColor="#499E61" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

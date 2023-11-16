@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/show_mh_off_lin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right">
+
+    <android.support.design.widget.NavigationView
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@color/color_blue_very_BIERON"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_blue_very_BIERON">
+
+
+                <TextView
+                    android:fontFamily="@font/iransans"
+                    android:textColor="#ffffff"
+                    android:padding="6dp"
+                    android:background="@drawable/radiuos_button_navigashion"
+                    android:onClick="onclick_method"
+                    android:textSize="14dp"
+                    android:id="@+id/btn_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/person"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/account_Management_Lin_sign"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_blue_very_BIERON">
+
+
+            <TextView
+                    android:id="@+id/account_Management_Lin_sign_Shop_Txt"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:textColor="#ffffff"
+                    android:onClick="onclick_method"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="سبدخرید"/>
+
+                <TextView
+                    android:fontFamily="@font/iransans"
+                    android:id="@+id/account_Management_Lin_sign_Exist_Txt"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:onClick="onclick_method"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="2dp"
+                    android:text="خروج"/>
+
+            </LinearLayout>
+
+
+            <ListView
+                android:fontFamily="@font/iransans"
+                android:id="@+id/navigate_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none">
+
+
+            </ListView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#000000"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/iransans"
+            android:background="@drawable/nuliiy"
+            android:textSize="12dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right|center"
+        android:layout_weight="6"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/iransans"
+            android:textStyle="bold"
+            android:id="@+id/txtTitleMenuList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="سبد خرید"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/imgTitleMenuList"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shop" />
+    </LinearLayout>
+</LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#000000"/>
+
+            <ListView
+                android:fontFamily="@font/iransans"
+                android:id="@+id/navigate_list_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none"></ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#000000"/>
+
+            <ListView
+                android:fontFamily="@font/iransans"
+                android:id="@+id/navigate_list_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none"></ListView>
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.design.widget.NavigationView>
+
+</LinearLayout>

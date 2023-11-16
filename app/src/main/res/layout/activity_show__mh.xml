@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@+id/coordinator_show_MH"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarmain"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/show_menu_img"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:padding="17dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/menu_show_mh_white" />
+
+                        <ImageView
+                            android:id="@+id/show_shop_img"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:padding="17dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shop_white" />
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="#000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="22dp"
+                            android:lines="1"
+                            android:text="samsung Y5 2019 ALM-LX9 Dual SIM 32GB Mobile"></TextView>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/show_back_img"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:onClick="click_wait"
+                            android:padding="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/back_show_mh_white"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout_Show_MH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="10dp"
+            app:tabPaddingStart="10dp"
+            app:tabTextColor="@color/white">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="mahsol"
+                android:text="کالا" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="tosiye"
+                android:id="@+id/tab_naqd"
+                android:text="نقد و بررسی" />
+
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="moshkhasat"
+                android:text="مشخصات" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="nazarat"
+                android:text="نظرات کاربران" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="tosiye"
+                android:text="کالای مشابه" />
+
+        </android.support.design.widget.TabLayout>
+
+        <LinearLayout
+            android:layout_weight="-.0"
+            android:id="@+id/Llt_CreateAccunt_Sign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2C75FE"
+            android:gravity="center"
+            android:onClick="click_wait"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/Llt_Img_activity_show_mh"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:onClick="click_wait"
+                android:src="@drawable/leftaaaaa"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:onClick="click_wait"
+                android:fontFamily="@font/iransans"
+                android:id="@+id/Llt_txt_activity_show_mh"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="ثبت نام در دیجیکالا "
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/NestedScrollView_Show_MH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark"
+        android:clipToPadding="false"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/show_MH_Image_View"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:background="@color/dark" />
+
+            <LinearLayout
+                android:id="@+id/Lin_Show_MH_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dark"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/show_mh_takhfif1_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/show_mh_off_lin"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/Timer_hour_mh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iransans"
+                            android:padding="3dp"
+                            android:text="12"
+                            android:textColor="#fff"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iransans"
+                            android:padding="3dp"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Timer_min_mh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iransans"
+                            android:padding="3dp"
+                            android:text="31"
+                            android:textColor="#fff"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iransans"
+                            android:padding="3dp"
+                            android:text=":"
+                            android:textColor="#fff"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Timer_sec_mh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:fontFamily="@font/iransans"
+                            android:padding="1dp"
+                            android:text="24"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="right"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="شگفت انگیز"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="پیشنهاد"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Lin_Show_MH_mneuonslider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/po_image1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@android:color/darker_gray"
+                        app:allow_random_color="false"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@color/colorPrimary"
+                        app:siShape="@raw/heart"
+                        app:shine_count="15"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="9dp"
+                        android:layout_weight="9"
+                        android:gravity="right|center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/show_mh_takhfif_lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/show_mh_off"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/show_mh_off_safe_t"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="34%"
+                                android:textColor="#fff"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="OFF"
+                                android:textColor="#fff"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/show_mh_brand_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/iransans"
+                        android:lines="1"
+                        android:text="سامسونگ"
+                        android:textColor="@color/color_blue_very_BIERON"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/show_mh_textmahsol_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="10dp"
+                        android:lines="1"
+                        android:text="samsung Y5 2019 ALM-LX9 Dual SIM 32GB Mobile"
+                        android:textColor="#000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/show_mh_Description_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/iransans"
+                        android:lines="1"
+                        android:text="  andawdawdawdتوضیحات"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="4dp">
+
+                        <RatingBar
+                            android:id="@+id/show_mh_rating"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@+id/show_mh_nazarat_majmohe_t"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="(180)"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/show_mh_color_lin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+
+                        android:layout_marginRight="17dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="118"
+                            android:fontFamily="@font/iransans"
+                            android:text="رنگ :"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:id="@+id/show_mh_color_lin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="2dp">
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+
+                                    android:background="@drawable/selector"
+                                    app:cardCornerRadius="20dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center"
+                                        android:padding="2dp">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_margin="2dp"
+                                            android:background="@drawable/color_selecor_show_mh" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="3dp"
+                                            android:fontFamily="@font/iransans"
+                                            android:text=" آبی "
+                                            android:textSize="12dp" />
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+
+                                    android:background="@drawable/selector"
+                                    app:cardCornerRadius="20dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center"
+                                        android:padding="2dp">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_margin="2dp"
+                                            android:background="@drawable/color_selecor_show_mh" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="3dp"
+                                            android:fontFamily="@font/iransans"
+                                            android:text=" آبی "
+                                            android:textSize="12dp" />
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/show_mh_size_lin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="118"
+                            android:fontFamily="@font/iransans"
+                            android:text="سایز :"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:scrollbars="none">
+
+                            <RadioGroup
+                                android:id="@+id/show_mh_size_lin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                            </RadioGroup>
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/button_show_mh"
+                    app:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/foroshande"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="فروشنده"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/show_mh_garantt_lin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/show_mh_garantt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/iransans"
+                                    android:padding="3dp"
+                                    android:text="یک سال گارانتی سامسونگ"
+                                    android:textColor="@color/cardview_dark_background"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="300dp"
+                                    android:layout_height="1dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:background="@color/dark" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/security_show_mh" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/show_mh_fast1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/iransans"
+                                    android:padding="3dp"
+                                    android:text="آماده ارسال"
+                                    android:textColor="@color/cardview_dark_background"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="300dp"
+                                    android:layout_height=".5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:background="@color/dark" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:padding="7dp"
+                                android:src="@drawable/truck_show_mh" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/show_mh_fast0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/iransans"
+                                    android:padding="3dp"
+                                    android:text="ارسال سریع (سوپرمارکتی)"
+                                    android:textColor="@color/cardview_dark_background"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:padding="7dp"
+                                android:src="@drawable/truck_green_show_mh" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/iransans"
+                                    android:padding="3dp"
+                                    android:text="بهترین قیمت 30 روز گذشته"
+                                    android:textColor="#64DD17"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center"
+                                android:padding="6dp"
+                                android:src="@drawable/warning_show_mh" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/button_show_mh"
+                    app:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/naqd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="نقد و بررسی"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/iransans"
+                            android:text="نقد و بررسی اجمالی"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/show_mh_textmahsol_t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="نام محصول"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/show_mh_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="ماشین‌های کنترلی یکی از انواع اسباب‌بازی‌های جذاب هستند که کودکان تا بزرگ‌سال آن را بسیار دوست دارند. اگر فرزند شما هم از دوست داران این بازی هیجانی است، می‌توانید «ماشین بازی کنترلی مدل Y35A» را باقیمت مناسبی از دیجی کالا خریداری کنید. این محصول جنسی پلاستیکی داشته و در مقیاس 1:16 از نمونه‌ی اصلی ساخته‌شده است. منبع انرژی آن چهار باتری قلمی بوده و برای هدایتش باید از ریموت کنترل ده سانتی آن استفاده کنید. ریموت کنترل بی‌سیمی این ماشین آفرود، با فرکانس کاربردی 27 مگاهرتز کار می‌کند. البته برای استفاده، ابتدا دو باتری قلمی باید  درون آن قرار دهید. این محصول برای پسربچه‌های بالای شش سال طراحی‌شده و یک تایر اضافی هم مانند نمونه‌ی اصلی در قسمت پشتی آن داشته که شباهتش را به نمونه‌ی اصلی بیشتر کرده است."
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/dark" />
+
+
+                        <LinearLayout
+                            android:id="@+id/show_mh_naqd_lin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="right"
+                            android:onClick="click_wait"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_mh_naqd_img"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:onClick="click_wait"
+                                android:padding="7dp"
+                                android:src="@drawable/left_show_mh" />
+
+                            <TextView
+                                android:id="@+id/show_mh_naqd_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="9"
+                                android:fontFamily="@font/iransans"
+                                android:onClick="click_wait"
+                                android:padding="2dp"
+                                android:text="نقد و بررسی تخصصی"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/show_mh_naqd_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="ماشین‌های کنترلی یکی از انواع اسباب‌بازی‌های جذاب هستند که کودکان تا بزرگ‌سال آن را بسیار دوست دارند. اگر فرزند شما هم از دوست داران این بازی هیجانی است، می‌توانید «ماشین بازی کنترلی مدل Y35A» را باقیمت مناسبی از دیجی کالا خریداری کنید. این محصول جنسی پلاستیکی داشته و در مقیاس 1:16 از نمونه‌ی اصلی ساخته‌شده است. منبع انرژی آن چهار باتری قلمی بوده و برای هدایتش باید از ریموت کنترل ده سانتی آن استفاده کنید. ریموت کنترل بی‌سیمی این ماشین آفرود، با فرکانس کاربردی 27 مگاهرتز کار می‌کند. البته برای استفاده، ابتدا دو باتری قلمی باید  درون آن قرار دهید. این محصول برای پسربچه‌های بالای شش سال طراحی‌شده و یک تایر اضافی هم مانند نمونه‌ی اصلی در قسمت پشتی آن داشته که شباهتش را به نمونه‌ی اصلی بیشتر کرده است."
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/button_show_mh"
+                    app:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/show_mh_lin_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/iransans"
+                            android:text="مشخصات استاد"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/lin_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/dark" />
+
+                        <LinearLayout
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp">
+
+                            <TextView
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:id="@+id/show_mh_name_teach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="محمد"
+                                android:textColor="@color/cardview_dark_background"  />
+
+                            <ImageButton
+                                android:onClick="click_wait"
+                                android:layout_weight=".002"
+                                android:id="@+id/sshow_mh_star_teach"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/star_mark_vr" />
+
+                            <TextView
+                                android:layout_weight="0.33"
+                                android:layout_marginLeft="7dp"
+                                android:id="@+id/ssssss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="نام :"
+                                android:textColor="@color/cardview_dark_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:id="@+id/show_mh_name_khanevadegi_teach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="محمدی"
+                                android:textColor="@color/cardview_dark_background"  />
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="نام خانوادگی :"
+                                android:textColor="@color/cardview_dark_background" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp">
+
+                            <TextView
+                                android:layout_marginRight="120dp"
+                                android:id="@+id/show_mh_age_teach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="20"
+                                android:textColor="@color/cardview_dark_background"  />
+                            <TextView
+                                android:layout_weight="-1"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="سن:"
+                                android:textColor="@color/cardview_dark_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:id="@+id/show_mh_licanse_teach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="لیسانس"
+                                android:textColor="@color/cardview_dark_background"  />
+                            <TextView
+                                android:layout_weight="0.5"
+                                android:layout_marginLeft="7dp"
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/iransans"
+                                android:text="مدرک :"
+                                android:textColor="@color/cardview_dark_background" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/lin_details1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/button_show_mh"
+                    app:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/show_mh_nazarat_afarad_LL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/iransans"
+                            android:text=" نظرات کاربران "
+                            android:textColor="@color/cardview_dark_background"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/dark" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp">
+
+                            <ProgressBar
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="135dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:indeterminate="false"
+                                android:progress="40" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_marginStart="4dp"
+                                android:text="تکنولوژی"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp">
+
+                            <ProgressBar
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="135dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:indeterminate="false"
+                                android:progress="40" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_marginStart="4dp"
+                                android:text="تکنولوژی"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp">
+
+                            <ProgressBar
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="135dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:indeterminate="false"
+                                android:progress="40" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_marginStart="4dp"
+                                android:text="تکنولوژی"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp">
+
+                            <ProgressBar
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="135dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:indeterminate="false"
+                                android:progress="40" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_marginStart="4dp"
+                                android:text="تکنولوژی"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/show_mh_mahsolatmoshabeh_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/button_show_mh"
+                    app:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:fontFamily="@font/iransans"
+                                        android:text="لیست کامل"
+                                        android:textColor="@color/color_text_blue_wihte"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:padding="8dp">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/iransans"
+                                        android:padding="1dp"
+                                        android:text=" محصولات مشابه"
+                                        android:textColor="#242121"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layoutDirection="rtl"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/Lin_mahsolatmoshabeh_Show_MH"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/button_show_mh"
+                    app:cardCornerRadius="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:padding="8dp">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginBottom="0dp"
+                                        android:fontFamily="@font/iransans"
+                                        android:text="لیست کامل"
+                                        android:textColor="@color/color_text_blue_wihte"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:padding="8dp">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/iransans"
+                                        android:padding="1dp"
+                                        android:text=" محصولات استاد"
+                                        android:textColor="#242121"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp"
+                    android:layoutDirection="rtl"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/Lin_mahsolatmoshabeh_Show_TEACH"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_weight="-.0"
+        android:id="@+id/Llt_CreateAccunt_Sign1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:onClick="SignOnClick"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:padding="7dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/show_mh_off_payin_t"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/iransans"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:background="@drawable/color_selecor_show_mh"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="34%"/>
+
+
+                <TextView
+                    android:id="@+id/show_mh_qeyat_qabltakhfifi_t"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:textStyle="bold"
+                   android:layout_marginTop="3dp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="8200"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/show_mh_qeyat_batakhfifi_tt"
+                    android:textSize="13dp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تومان"/>
+                <TextView
+                    android:id="@+id/show_mh_qeyat_batakhfifi_t"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="13dp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1200"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:fontFamily="@font/iransans"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/show_mh_menu_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="افزودن به سبد خرید"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
